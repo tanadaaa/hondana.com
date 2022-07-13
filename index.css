@@ -29,7 +29,7 @@
 }
 @font-face {
     font-family: 'CorporateB';
-      src: url('/fonts/Corporate-Logo-Bold-ver2.otf') format('OpenType');
+      src: url('./fonts/Corporate-Logo-Bold-ver2.otf') format('OpenType');
     }
 body {
     font-family:sans-serif;
@@ -38,12 +38,25 @@ body {
 header{
     background-color: rgb(247, 172, 110);
 }
-.head_hondana{
+#head_container{
+    display: grid;
+    grid-template-columns: 80px 200px 1fr;
+}
+#head_hondana{
+    grid-column: 2 / 3;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: xx-large;
+    vertical-align: middle;
+}
+#head_icon{
+    grid-column: 1 / 2;
+    width: 80px;
+    height: 80px;
+    background-image: url(./images/hidoran.png);
+    background-size: contain;
 }
 .menu {
-    
+    font-size: x-large;
     left: 0;
     width: 100%;
     height: 70px;
