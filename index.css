@@ -1,36 +1,4 @@
 @charset "utf-8";
-@font-face {
-    font-family: 'Round_Black';
-    src: url('./fonts/MPLUSRounded1c-Black.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Round_Bold';
-    src: url('./fonts/MPLUSRounded1c-Bold.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Round_ExtraBold';
-    src: url('./fonts/MPLUSRounded1c-ExtraBold.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Round_Light';
-    src: url('./fonts/MPLUSRounded1c-Light.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Round_Medium';
-    src: url('./fonts/MPLUSRounded1c-Medium.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Round_Regular';
-    src: url('./fonts/MPLUSRounded1c-Regular.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Round_Black';
-    src: url('./fonts/MPLUSRounded1c-Thin.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'CorporateB';
-      src: url('./fonts/Corporate-Logo-Bold-ver2.otf') format('OpenType');
-    }
 body {
     font-family:sans-serif;
     line-height:1.5;
@@ -70,14 +38,15 @@ header{
     list-style: none;
 }
 .menu li{
-    font-family: 'CorporateB';
+    font-family: 'Oswald', sans-serif;
     width: 100%;
     display: block;
     text-decoration: none;
     color: rgb(0, 0, 0);
     text-align: center;
 }
-.menu a,a:hover,a:visited{
+a,a:hover,a:visited{
+    text-decoration: none;
     color: inherit;
 }
 #main_contents{
@@ -87,7 +56,43 @@ header{
     grid-gap: var(2em);
     text-align: left;
 }
-#intro{
+.blocks{
     border-radius: 20px;
     background-color: rgb(229, 231, 157);
+}
+#intro ul{
+    font-size: 170%;
+}
+.atcoder{
+    transition: background-color .5s;
+}
+.atcoder:hover{
+    background-color: rgb(255, 0, 0);
+}
+.rainbow{
+    border: 5px solid;
+    border-image: conic-gradient(#f5f551,#5eff5e,#84a1ff,#ff45ff,#ff5a5a,#ffbc41,#f5f551) 1;
+    height: auto;
+    width: auto;
+    background: linear-gradient(to right,#e60000,#f39800,#c4bb0b,#009944,#0068b7,#1d2088,#920783);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+}
+#haihai{
+    background-color: gray;
+    width: auto;
+}
+#twitter_color{
+    color: rgb(0, 148, 143);
+}
+.twitter-timeline{
+    border-radius: 20px;
+}
+.kusodeka{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2000%;
+    text-align: center;
 }
