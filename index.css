@@ -34,6 +34,7 @@
 body {
     font-family:sans-serif;
     line-height:1.5;
+    background-color: rgb(255, 228, 192);
 }
 header{
     background-color: rgb(247, 172, 110);
@@ -60,7 +61,7 @@ header{
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: bisque;
+    background-color: rgb(229, 231, 157);
     padding: 5px;
     box-sizing: border-box;
   }
@@ -76,9 +77,17 @@ header{
     color: rgb(0, 0, 0);
     text-align: center;
 }
-.menu li a{
-    
-}
 .menu a,a:hover,a:visited{
     color: inherit;
+}
+#main_contents{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(2em);
+    text-align: left;
+}
+#intro{
+    border-radius: 20px;
+    background-color: rgb(229, 231, 157);
 }
