@@ -1,5 +1,9 @@
 @charset "utf-8";
 body {
+    width:80%;
+    min-width: 500px;
+    margin-right:auto;
+    margin-left:auto;
     font-family:sans-serif;
     line-height:1.5;
     background-color: rgb(255, 228, 192);
