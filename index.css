@@ -7,6 +7,10 @@ body {
     font-family:sans-serif;
     line-height:1.5;
     background-color: rgb(255, 228, 192);
+    display: grid;
+    grid-template-rows: 80px 80px 1fr;
+    grid-gap: var(2em);
+    text-align: left;
 }
 header{
     background-color: rgb(247, 172, 110);
@@ -56,12 +60,12 @@ a,a:hover,a:visited{
 #main_contents{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(2em);
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-gap: 25px;
+    padding-bottom: 25px;
     text-align: left;
 }
 .blocks{
-    border-radius: 20px;
     background-color: rgb(253, 172, 114);
 }
 #intro ul{
@@ -92,8 +96,28 @@ a,a:hover,a:visited{
 #twitter_color{
     color: rgb(0, 148, 143);
 }
-.twitter-timeline{
-    border-radius: 20px;
+#hatena_blog{
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    text-align: left;
+}
+#hatena_chr{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    padding:20px 0;
+    grid-row: 1 / 2;
+    color: #232323;
+}
+#hatena_icon{
+    grid-row: 2 / 3;
+    background-image: url(./images/hatena_icon.jpg);
+    background-repeat:  no-repeat; 
+    background-size: contain;
+    padding:20px 0;
+}
+.thin:hover{
+    opacity: 0.8;
 }
 .kusodeka{
     font-family: 'M PLUS Rounded 1c', sans-serif;
