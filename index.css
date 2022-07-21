@@ -98,7 +98,7 @@ a,a:hover,a:visited{
 }
 #hatena_blog{
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 120px 1fr;
     text-align: left;
 }
 #hatena_chr{
